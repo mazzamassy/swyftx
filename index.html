@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swyftx</title>
+    <link rel="icon" type="image/x-icon" href="Swyftx_Symbol_0.svg">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <meta name="description" content="Sign in to Swyftx - The only exchange that lets you place paper trades 100% free" />
+    <meta name="author" content="Swyftx" />
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+    <meta property="og:title" content="Swyftx - Sign In" />
+    <meta property="og:description" content="Sign in to Swyftx - The only exchange that lets you place paper trades 100% free" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Left side - Hero section -->
+      <div class="hero-section">
+        <!-- Logo -->
+        <!-- <div class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="logo-text">swyftx</span>
+        </div> -->
+
+        <img src="Swyftx_Logo_0.svg" class="swytfx-logo" alt="">
+
+        <!-- Image -->
+        <div class="image-container">
+          <img src="trading_illustration.png" alt="Trading illustration" class="hero-image" />
+        </div>
+
+        <!-- Carousel content -->
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Test your <em>strategy</em> using demo mode.
+          </h1>
+          <p class="hero-subtitle">
+            The only exchange that lets you place paper trades 100% free.
+          </p>
+          
+          <!-- Carousel indicators -->
+          <div class="carousel-indicators">
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+            <div class="indicator active"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side - Login form -->
+      <div class="login-section">
+        <!-- <img src="Swyftx_Logo_1.png" alt="swyftx-black" class="swytfx-logo-black" style="display: none;" /> -->
+        <div class="login-container">
+        <img src="Swyftx_Logo_1.png" alt="swyftx-black" class="swytfx-logo-black"/>
+          <!-- <h2 class="login-title">Sign in to Swyftx</h2> -->
+           <img src="title.png" alt="title" class="title-img" draggable="false">
+
+          
+          <!-- Security notice -->
+          <div class="security-notice">
+            <!-- <img class="info-icon" src="download.svg" alt=""> -->
+             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="locker-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5227 7.39601V8.92935C19.2451 9.46696 20.5 11.0261 20.5 12.8884V17.8253C20.5 20.1308 18.5886 22 16.2322 22H7.7688C5.41136 22 3.5 20.1308 3.5 17.8253V12.8884C3.5 11.0261 4.75595 9.46696 6.47729 8.92935V7.39601C6.48745 4.41479 8.95667 2 11.9848 2C15.0535 2 17.5227 4.41479 17.5227 7.39601ZM12.0051 3.73904C14.0678 3.73904 15.7445 5.37871 15.7445 7.39601V8.7137H8.25553V7.37613C8.26569 5.36878 9.94232 3.73904 12.0051 3.73904ZM12.8891 16.4549C12.8891 16.9419 12.4928 17.3294 11.9949 17.3294C11.5072 17.3294 11.1109 16.9419 11.1109 16.4549V14.2488C11.1109 13.7718 11.5072 13.3843 11.9949 13.3843C12.4928 13.3843 12.8891 13.7718 12.8891 14.2488V16.4549Z" fill="currentColor"></path></svg>
+            <div class="notice-content">
+              <p class="notice-title">Always check you are on the official site:</p>
+              <p class="notice-url">https://trade.swyftx.com/</p>
+            </div>
+          </div>
+
+          <form class="login-form" id="loginForm">
+            <!-- Email field -->
+            <div class="form-group">
+              <label for="email" class="form-label-email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="Email address"
+              />
+            </div>
+
+            <!-- Password field -->
+            <div class="form-group">
+              <div class="password-header">
+                <label for="password" class="form-label-pswd">Password</label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+              </div>
+              <input
+                type="password"
+                id="password"
+                class="form-input"
+                placeholder="Password"
+              />
+            </div>
+
+            <!-- Remember me checkbox -->
+            <div class="checkbox-group">
+              <input type="checkbox" id="remember-me" class="checkbox" />
+              <label for="remember-me" class="checkbox-label">Remember Me</label>
+            </div>
+
+            <!-- reCAPTCHA placeholder -->
+            <div class="g-recaptcha"
+     data-sitekey="6LfOtk4rAAAAAMKAzjOndKYBolFQiFB3RvkxD7P9"
+     data-callback="onRecaptchaSuccess"
+     data-expired-callback="onRecaptchaExpired"></div>
+
+
+
+            <!-- <div class="recaptcha-container">
+              <div class="recaptcha-content">
+                <input type="checkbox" class="recaptcha-checkbox" />
+                <span class="recaptcha-text">I'm not a robot</span>
+              </div>
+              <div class="recaptcha-info">
+                <div>reCAPTCHA</div>
+                <div class="recaptcha-links">Privacy - Terms</div>
+              </div>
+            </div> -->
+
+            <!-- Sign in button -->
+            <button type="submit" class="signin-button" disabled>
+              Sign in
+            </button>
+          </form>
+
+          <!-- Sign up link -->
+          <!-- <div class="signup-link">
+            <span class="signup-text">Don't have an account? </span>
+            <a href="#" class="signup-link-text">Create Account</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+  // CALLBACKS GLOBALI PER GOOGLE
+  function onRecaptchaSuccess() {
+    updateSubmitButtonState();
+  }
+
+  function onRecaptchaExpired() {
+    updateSubmitButtonState();
+  }
+
+  // QUANDO IL DOM È PRONTO
+  document.addEventListener('DOMContentLoaded', function () {
+    const emailInput = document.getElementById('email');
+    const submitButton = document.querySelector('.signin-button');
+    const form = document.getElementById('loginForm');
+
+    const showEmailError = (msg) => {
+      let error = document.getElementById('email-error');
+      if (!error) {
+        error = document.createElement('div');
+        error.id = 'email-error';
+        error.style.color = 'red';
+        error.style.fontSize = '13px';
+        error.style.marginTop = '5px';
+        emailInput.parentNode.appendChild(error);
+      }
+      error.innerText = msg;
+    };
+
+    const clearEmailError = () => {
+      const error = document.getElementById('email-error');
+      if (error) error.remove();
+    };
+
+    const isEmailValid = (email) => email.includes('@');
+
+    const isRecaptchaCompleted = () => {
+      return typeof grecaptcha !== 'undefined' && grecaptcha.getResponse().length > 0;
+    };
+
+    window.updateSubmitButtonState = function () {
+      const email = emailInput.value.trim();
+      const emailValid = isEmailValid(email);
+      const recaptchaValid = isRecaptchaCompleted();
+
+if (!emailValid) {
+  // showEmailError('La mail non è corretta');
+  emailInput.classList.add('error');
+} else {
+  clearEmailError();
+  emailInput.classList.remove('error');
+}
+
+      const enable = emailValid && recaptchaValid;
+      submitButton.disabled = !enable;
+      submitButton.style.cursor = enable ? 'pointer' : 'not-allowed';
+    };
+
+    emailInput.addEventListener('input', updateSubmitButtonState);
+
+    form.addEventListener('submit', function (e) {
+      updateSubmitButtonState();
+      if (submitButton.disabled) {
+        e.preventDefault();
+      }
+    });
+  });
+</script>
+
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
