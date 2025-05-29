@@ -378,7 +378,7 @@ font-family: "Public Sans", "Helvetica", "Arial", sans-serif;
   display: none;
   width: auto;
   height: auto;
-  max-width: 150px;
+  max-width: 120px;
   margin-bottom: 40px;
   object-fit: contain;
 }
@@ -406,6 +406,6 @@ font-family: "Public Sans", "Helvetica", "Arial", sans-serif;
 
   .swytfx-logo-black {
     display: block !important;
-    margin: 0 auto 70px;
+    margin: -170px auto 50px;
   }
 }
