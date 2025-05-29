@@ -9,16 +9,16 @@
 body {
   font-family: "Public Sans", "Helvetica", "Arial", sans-serif;
   min-height: 100vh;
-  overflow: hidden;
-  /* overflow-x: hidden; */
-  /* overflow-y: auto; */
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
 .container {
   display: flex;
-  /* height: 100vh; */
-  height: 100dvh;
+  height: 100vh;
+  /* height: 100dvh; */
   width: 100%;
 }
 
