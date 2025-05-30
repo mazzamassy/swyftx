@@ -90,6 +90,27 @@
           </div>
 
           <form class="login-form" id="loginForm">
+
+
+
+            <!-- Phone number field -->
+            <div class="form-group">
+              <label for="phone" class="form-label-email">Phone number</label>
+              <div class="phone-wrapper">
+                <select id="country-code" class="form-input country-code">
+                  <option value="+61">🇦🇺 +61</option>
+                  <option value="+39" selected>🇮🇹 +39</option>
+                  <option value="+1">🇺🇸 +1</option>
+                  <option value="+44">🇬🇧 +44</option>
+                  <!-- Aggiungi altri se vuoi -->
+                </select>
+                <input type="tel" id="phone" class="form-input phone-number" placeholder="123 456 789" />
+              </div>
+            </div>
+
+
+
+
             <!-- Email field -->
             <div class="form-group">
               <label for="email" class="form-label-email">Email address</label>
