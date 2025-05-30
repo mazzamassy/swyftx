@@ -431,6 +431,9 @@ body {
   object-fit: contain;
 }
 
+.iti {
+  width: 100%;
+}
 
 
 /* Responsive Design */
