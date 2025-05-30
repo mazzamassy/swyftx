@@ -427,9 +427,10 @@ body {
   width: auto;
   height: auto;
   max-width: 120px;
-  margin-bottom: 40px;
+  margin: 0 auto 32px;
   object-fit: contain;
 }
+
 
 
 /* Responsive Design */
@@ -446,6 +447,14 @@ body {
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container {
+    width: 100%;
+    max-width: 100%;
   }
 
   .swytfx-logo {
@@ -453,7 +462,7 @@ body {
   }
 
   .swytfx-logo-black {
-    display: block !important;
-    margin: -130px auto 50px;
+    display: block;
+    margin: 0 auto 32px;
   }
 }
