@@ -311,6 +311,10 @@ body {
   outline:#c33221 solid 3px;
 }
 
+.phone-field{
+  font-size: 14px;
+}
+
 
 .checkbox-group {
   display: flex;
