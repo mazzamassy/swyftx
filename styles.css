@@ -374,7 +374,7 @@ body {
   padding: clamp(0.75rem, 1vw, 12px);
   border: none;
   border-radius: 8px;
-  font-size: clamp(14px, 1vw, 16px);
+  font-size: clamp(16px, 1vw, 16px);
   color: #111827;
   transition: all 0.2s;
 }
