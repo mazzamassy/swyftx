@@ -215,6 +215,7 @@ body {
   justify-content: center;
   padding: clamp(1.5rem, 2vw, 2rem);
   min-width: 0; /* Prevents flex item from overflowing */
+  position: relative;
 }
 
 @media (max-width: 500px) {
@@ -519,6 +520,7 @@ body {
   object-fit: contain;
 }
 
+
 .iti {
   width: 100%;
 }
@@ -550,7 +552,7 @@ body {
 
   .login-section {
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     padding: clamp(1.25rem, 2vw, 2rem);
     display: flex;
     justify-content: center;
@@ -563,13 +565,20 @@ body {
     padding: 0 clamp(1rem, 1.5vw, 1.5rem);
   }
 
+  .title-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: clamp(2rem, 3vw, 35px);
+  }
+
   .swytfx-logo {
     display: none;
   }
 
   .swytfx-logo-black {
     display: block;
-    margin: 0 auto clamp(1.5rem, 2vw, 32px);
+    margin: 0 auto clamp(2.5rem, 4vw, 50px);
     width: min(120px, 30%);
   }
 }
